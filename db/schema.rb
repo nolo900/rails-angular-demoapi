@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20170203193851) do
 
   create_table "patients", force: :cascade do |t|
     t.string   "name"
-    t.string   "insurance_co"
+    t.string   "insurance"
     t.string   "gender"
     t.boolean  "new_patient"
     t.datetime "created_at",  null: false

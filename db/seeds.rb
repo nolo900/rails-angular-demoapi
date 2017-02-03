@@ -10,7 +10,7 @@ Appointment.destroy_all
 Patient.destroy_all
 Doctor.destroy_all
 10.times do
-  Patient.create(name: Faker::Name.name, insurance_co: Faker::Beer.malts, gender: "F", new_patient: Faker::Boolean.boolean)
+  Patient.create(name: Faker::Name.name, insurance: Faker::Beer.malts, gender: "F", new_patient: Faker::Boolean.boolean)
   Doctor.create(name: Faker::Name.name, specialty: Faker::Hipster.word, gender: "F", insurance: Faker::Boolean.boolean)
 end
 10.times do
